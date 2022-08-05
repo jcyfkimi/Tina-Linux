@@ -8,5 +8,5 @@
 	path = lichee/linux-5.4
 	url = https://github.com/mangopi-sbc/tina-linux-5.4
 [submodule "lichee/brandy-2.0/tina-u-boot-2018"]
-	path = lichee/brandy-2.0/tina-u-boot-2018
+	path = lichee/brandy-2.0/u-boot-2018
 	url = https://github.com/jcyfkimi/tina-u-boot-2018.git
