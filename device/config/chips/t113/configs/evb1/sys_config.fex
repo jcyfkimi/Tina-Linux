@@ -18,7 +18,7 @@ machine = "evb1"
 ;----------------------------------------------------------------------------------
 [platform]
 eraseflag   = 1
-debug_mode  = 0
+debug_mode  = 1
 ;----------------------------------------------------------------------------------
 ;   system configuration
 ;   ?
@@ -33,7 +33,7 @@ debug_mode  = 0
 ;storage_type   = boot medium, 0-nand, 1-sd, 2-emmc, 3-nor, 4-emmc3, 5-spinand -1(defualt)auto scan
 ;----------------------------------------------------------------------------------
 [target]
-storage_type    = 5
+storage_type    = 1
 burn_key        = 0
 ;----------------------------------------------------------------------------------
 ;spinor configuration
@@ -208,9 +208,9 @@ twi_sda  = port:PC1<3><1><default><default>
 ;uart_debug_rx  |Boot串口接收的GPIO配置     |
 ;----------------------------------------------------------------------------------
 [uart_para]
-uart_debug_port = 0
-uart_debug_tx   = port:PF02<3><1><default><default>
-uart_debug_rx   = port:PF04<3><1><default><default>
+uart_debug_port = 3
+uart_debug_tx   = port:PB06<7><1><default><default>
+uart_debug_rx   = port:PB07<7><1><default><default>
 
 
 ;----------------------------------------------------------------------------------

@@ -166,7 +166,7 @@
 	};
 
 	uart3_pins_a: uart3_pins@0 {  /* For EVB1 board */
-		pins = "PD10", "PD11";
+		pins = "PB6", "PB7";
 		function = "uart3";
 		muxsel = <5>;
 		drive-strength = <10>;
@@ -442,7 +442,7 @@
 	pinctrl-names = "default", "sleep";
 	pinctrl-0 = <&uart0_pins_a>;
 	pinctrl-1 = <&uart0_pins_b>;
-	status = "okay";
+	status = "disabled";
 };
 
 &uart1 {
@@ -460,11 +460,13 @@
 };
 
 &uart3 {
+    /*
 	compatible = "allwinner,sun20iw1-dsp-uart";
+    */
 	pinctrl-names = "default", "sleep";
 	pinctrl-0 = <&uart3_pins_a>;
 	pinctrl-1 = <&uart3_pins_a>;
-	status = "disabled";
+	status = "okay";
 };
 
 &soc {
@@ -602,7 +604,7 @@
 	/*vdmmc33sw-supply = <&reg_dcdc1>;*/
 	/*vqmmc18sw-supply = <&reg_eldo1>;*/
 	/*vdmmc18sw-supply = <&reg_eldo1>;*/
-	status = "disabled";
+	status = "okay";
 };
 
 &sdc1 {
