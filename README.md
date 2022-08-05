@@ -24,6 +24,7 @@ Tina-Linux for T113/D1-H/D1s
  
 ### Compile
   $ source build/envsetup.sh
+  
   $ lunch
 ``` sh
   You're building on Linux
@@ -36,6 +37,12 @@ Lunch menu... pick a combo:
   $ 1 or 3
   
   $ muboot
+  
   $ make
+  
   $ pack
   
+### Flash to SD card
+  Download tf card tool phoenixtool from: https://mangopi.cc/_media/phoenixcard4.2.8.zip
+  Notice, it's windows only. 
+  Flash the img file into SD card using phoenixtool.
